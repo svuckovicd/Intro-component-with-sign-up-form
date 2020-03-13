@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  background-image: url(images/bg-intro-desktop.png);
+  background-color: #ff7a7a; }
+
+h1 {
+  font-size: 45px; }
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .container .text-part {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    color: #fff; }
+    .container .text-part .context {
+      width: 80%;
+      max-width: 450px;
+      padding-top: 270px;
+      margin: 0 auto; }
+    .container .text-part h1 {
+      font-weight: 700;
+      text-shadow: #fafafa 1px 1px 0px;
+      line-height: 60px; }
+    .container .text-part p {
+      padding-top: 20px;
+      font-size: 20px;
+      font-weight: 500;
+      color: #b9b6d3; }
+  .container .input-part {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .container .input-part .try {
+      margin-top: 100px;
+      font-size: 18px;
+      max-width: 500px;
+      margin-bottom: 20px;
+      width: 80%;
+      height: 45px;
+      background: #6055a5;
+      color: #fff;
+      -webkit-box-shadow: #3e3c49 0px 2px 0px;
+      box-shadow: #3e3c49 0px 2px 0px;
+      border-radius: 12px;
+      border: none; }
+      .container .input-part .try:hover {
+        cursor: pointer; }
+    .container .input-part .form {
+      width: 85%;
+      max-width: 500px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 8px;
+      -webkit-box-shadow: #3e3c49 0px 2px 0px;
+      box-shadow: #3e3c49 0px 2px 0px; }
+      .container .input-part .form .inp-group {
+        margin: 40px; }
+        .container .input-part .form .inp-group input {
+          height: 60px;
+          outline: none;
+          border-radius: 8px;
+          border-width: 0.5px;
+          padding: 20px;
+          font-weight: bold;
+          border-color: #b9b6d3;
+          width: 100%; }
+          .container .input-part .form .inp-group input:focus {
+            border-color: #6055a5; }
+        .container .input-part .form .inp-group span {
+          display: block;
+          text-align: right;
+          color: #ff7a7a;
+          font-size: 11px; }
+      .container .input-part .form button {
+        height: 45px;
+        font-size: 18px;
+        width: 100%;
+        background: #38cc8c;
+        color: #fff;
+        border-radius: 12px; }
+        .container .input-part .form button:hover {
+          cursor: pointer; }
+      .container .input-part .form .text {
+        padding-top: 5px;
+        font-size: 12px;
+        text-align: center; }
+        .container .input-part .form .text span {
+          font-weight: bold;
+          color: #ff7a7a; }
+
+footer {
+  text-align: center; }
+
+@media (max-width: 1024px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .container .text-part .context {
+      padding-top: 150px; }
+    .container .input-part .try {
+      margin-top: 10px; } }
+
+@media (max-width: 550px) {
+  .container {
+    max-width: 375px; }
+    .container .text-part .context {
+      max-width: 250px;
+      padding-top: 100px;
+      text-align: center; }
+    .container .text-part h1 {
+      font-weight: 700;
+      line-height: 35px;
+      font-size: 30px; }
+    .container .text-part p {
+      padding-top: 20px;
+      font-size: 13px;
+      color: #b9b6d3; }
+    .container .input-part .try {
+      margin-top: 0px;
+      max-width: 300px;
+      height: 80px; }
+    .container .input-part .form {
+      max-width: 300px; }
+      .container .input-part .form .inp-group {
+        margin: 20px; }
+        .container .input-part .form .inp-group input {
+          height: 60px;
+          padding: 10px; }
+      .container .input-part .form button {
+        height: 45px;
+        font-size: 20px;
+        width: 100%;
+        background: #38cc8c;
+        color: #fff;
+        border-radius: 12px;
+        border: none; }
+        .container .input-part .form button:hover {
+          cursor: pointer; }
+      .container .input-part .form .text {
+        padding-top: 5px;
+        font-size: 12px;
+        text-align: center; } }

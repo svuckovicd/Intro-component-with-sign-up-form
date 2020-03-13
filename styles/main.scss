@@ -1,0 +1,249 @@
+$Red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+$Blue: hsl(248, 32%, 49%);
+
+$DarkBlue: hsl(249, 10%, 26%) ;
+ $GrayishBlue: hsl(246, 25%, 77%);
+//Font size: 16px
+//Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+//Weights: 400, 500, 600, 700
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+*{
+
+     margin:0px;
+     padding:0px;
+     box-sizing: border-box;
+}
+
+
+body {
+     font-family: 'Poppins', sans-serif;
+     font-size:14px;
+     background-image:url(images/bg-intro-desktop.png);
+     background-color:$Red;
+}
+h1 {
+
+     font-size:45px;
+}
+
+.container {
+        max-width:1440px;
+        width:100%;
+        margin:0 auto;
+        display:flex;
+        flex-wrap: wrap;
+    .text-part{
+         flex:1;
+         color:#fff;
+         .context{
+            width:80%;
+            max-width:450px;
+            padding-top:270px;
+            margin:0 auto;
+         }
+         h1{
+            font-weight: 700;
+            text-shadow:rgba(250,250,250,70%) 1px 1px 0px;
+            line-height: 60px;
+         }
+         p{
+            padding-top:20px;
+            font-size:20px;
+            font-weight: 500;
+            color:$GrayishBlue;
+
+         }
+    }
+    .input-part{
+        flex:1;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+        .try {
+           margin-top:100px;
+           font-size:18px;
+           max-width:500px;
+           margin-bottom:20px;
+           width:80%;
+           height:45px;
+           background:$Blue;
+           color:#fff;
+           
+           box-shadow: $DarkBlue 0px 2px 0px;
+ 
+           border-radius:12px;
+           border:none;
+           &:hover{
+            cursor:pointer;
+        }
+         }
+         .form {
+              width:85%;
+              max-width:500px;
+              margin:0 auto;
+              background:#fff;
+              border-radius:8px;
+           box-shadow: $DarkBlue 0px 2px 0px;
+
+              .inp-group{
+                
+                margin:40px;
+
+                input{
+                    height:60px;
+                    outline: none;
+                    border-radius:8px;
+                    border-width:0.5px;
+                    padding:20px;
+                    font-weight: bold;
+                    border-color:$GrayishBlue;
+                    width:100%;
+                    &:focus{
+                        border-color:$Blue;
+                    }
+                    
+                }
+              span{
+                display:block;
+                text-align:right;
+                color:$Red;
+                font-size:11px;
+              }
+                   
+             
+              }
+              button {
+
+                height:45px;
+                font-size:18px;
+                width:100%;
+                background:$green;
+                color:#fff;
+                border-radius:12px;
+                &:hover{
+                    cursor:pointer;
+                }
+            }
+            .text{
+                padding-top:5px;
+                font-size:12px;
+                text-align: center;
+                span{
+                    font-weight: bold;
+                    color:$Red;
+                }
+            }
+              
+       }
+    }
+}
+footer{
+
+     text-align:center;
+}
+@media(max-width:1024px){
+
+
+
+
+    .container {
+        flex-direction: column;
+           .text-part{
+
+             .context{
+
+                padding-top:150px;
+                
+             }
+            }
+            .input-part{
+            
+        
+                .try {
+                   margin-top:10px;
+                
+        
+        }
+            }}
+
+    }
+
+ 
+
+
+
+    @media (max-width:550px){
+
+        .container {
+            max-width:375px;
+        .text-part{
+             .context{
+                max-width:250px;
+                padding-top:100px;
+                text-align:center;
+             }
+             h1{
+                font-weight: 700;
+                line-height: 35px;
+                font-size:30px;
+             }
+             p{
+                padding-top:20px;
+                font-size:13px;
+                color:$GrayishBlue;
+             }
+             
+        }
+        .input-part{
+            .try {
+               margin-top:0px;
+               max-width:300px;
+               height:80px;
+             }
+             .form {
+                  max-width:300px;
+                  .inp-group{
+                    
+                    margin:20px;
+    
+                    input{
+                        height:60px;
+                        padding:10px;
+                        
+                    }
+                 
+                  }
+                  button {
+    
+                    height:45px;
+                    font-size:20px;
+                    width:100%;
+                    background:$green;
+                    color:#fff;
+                    border-radius:12px;
+                    border:none;
+                    &:hover{
+                        cursor:pointer;
+                    }
+                }
+                .text{
+                    padding-top:5px;
+                    font-size:12px;
+                    text-align: center;
+                }
+                  
+           }
+        }
+    }  
+    }
+
+
+
+       
+          
+    
+                
+               
+   
